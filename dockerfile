@@ -1,9 +1,9 @@
-FROM debian:buster
+FROM subfuzion/dart:slim
 
 WORKDIR /app
 
 ADD ./bin/main.exe main
-RUN chmod +x main
+# RUN chmod +x main
 
 EXPOSE 8080
 
